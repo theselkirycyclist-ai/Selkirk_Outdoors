@@ -52,6 +52,40 @@
             color: white;
             text-decoration: none;
         }
+/* Festival Overview Map Card */
+.overview-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.overview-card h2 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.overview-card p {
+    color: #4a5568;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.overview-img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: opacity 0.2s ease;
+}
+
+.overview-img:hover {
+    opacity: 0.92;
+}
 
 
         /* Hero Header Container with Flexbox Layout */
@@ -229,6 +263,19 @@
 
     <nav>
         <div class="nav-container">
+                <div class="container">
+
+        <!-- Festival Overview Map -->
+        <div class="overview-card">
+            <h2>2027 Festival Routes Overview</h2>
+            <p>See how all the walks connect across the Scottish Borders from our hub at Victoria Halls in Selkirk. <em>(Click map to view full size)</em></p>
+            <a href="festival-overview.jpg" target="_blank" title="Click to open full-size map">
+                <img src="festival-overview.jpg" alt="Selkirk Walking Festival 2027 Routes Overview Map" class="overview-img">
+            </a>
+        </div>
+
+        <h2 class="section-title">The Official routes for the 2027 Borders Walking Festival in Selkirk</h2>
+
             <a href="../index.html" class="nav-btn">← Selkirk Outdoors Home</a>
             <a href="borders_map/" class="nav-btn">Scottish Borders core paths map</a>
         </div>
